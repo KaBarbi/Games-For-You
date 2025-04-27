@@ -1,0 +1,20 @@
+:root {
+    --azul-neon-claro: #00bfff;
+    --azul-neon-escuro: #001f3f;
+    --ciano-suave: #66fcf1;
+    --roxo-escuro: #2e0854;
+    --preto-profundo: #0d0d0d;
+    --branco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:var(--preto-profundo);
+    color: var(--branco);
+    font-family: Arial, sans-serif;
+}
