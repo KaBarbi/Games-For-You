@@ -1,31 +1,34 @@
 import React from "react"
-import "./Menu.css"
+import { NavLink, Link } from "react-router-dom"
 import { FaShoppingCart } from "react-icons/fa"
 import { MdAccountCircle } from "react-icons/md"
+import "./Menu.css"
 
 const Menu = () => {
     return (
         <header className="menu">
             <div className="logo">
-                <a href="/">
+                <Link to="/">
                     <img src="/images/logo4.png" alt="Logo" />
-                </a>
+                </Link>
             </div>
 
             <nav className="nav-links">
-                <a href="#">Home</a>
-                <a href="#">PlayStation</a>
-                <a href="#">Xbox</a>
-                <a href="#">Switch</a>
+                <NavLink to="/" end>
+                    Home
+                </NavLink>
+                <NavLink to="/playstation">PlayStation</NavLink>
+                <NavLink to="/xbox">Xbox</NavLink>
+                <NavLink to="/switch">Switch</NavLink>
             </nav>
 
             <div className="icons">
-                <a href="#">
+                <Link to="/login">
                     <MdAccountCircle size={28} />
-                </a>
-                <a href="#">
+                </Link>
+                <Link to="/cart">
                     <FaShoppingCart size={28} />
-                </a>
+                </Link>
             </div>
         </header>
     )

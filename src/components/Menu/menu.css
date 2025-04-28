@@ -64,3 +64,12 @@
 .icons a:hover {
     color: var(--ciano-suave);
 }
+
+.nav-links a.active {
+    color: var(--ciano-suave);
+}
+
+.nav-links a.active::after {
+    width: 100%;
+    background-color: var(--ciano-suave);
+}
