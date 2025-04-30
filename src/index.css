@@ -5,6 +5,8 @@
     --roxo-escuro: #2e0854;
     --preto-profundo: #0d0d0d;
     --branco: #ffffff;
+    --azul-escuro-profundo: #0a2a4a;
+    --branco-opaco: #ccc;
 }
 
 * {
@@ -14,7 +16,7 @@
 }
 
 body {
-    background-color:var(--preto-profundo);
+    background-color: var(--preto-profundo);
     color: var(--branco);
     font-family: Arial, sans-serif;
 }
